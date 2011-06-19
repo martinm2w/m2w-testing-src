@@ -30,7 +30,7 @@ public class Exercise5_3 {
     private Exception Exception;
 
 
-    String reverse(String s) throws Exception{
+    String reverse(String s) throws Exception{//more specific type the better
         String reverseStr = "";
         
         if(s.length() == 0){
