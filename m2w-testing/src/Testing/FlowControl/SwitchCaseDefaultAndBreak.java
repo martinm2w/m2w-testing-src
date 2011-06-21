@@ -9,7 +9,7 @@ package Testing.FlowControl;
  * @author ruobo
  * @date Jun 16, 2011
  */
-public class Switch {
+public class SwitchCaseDefaultAndBreak {
 //	====================================Attributes=============================================
 
 //      ===================================init & const============================================
