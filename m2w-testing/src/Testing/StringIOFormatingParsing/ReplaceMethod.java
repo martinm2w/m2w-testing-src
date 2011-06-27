@@ -23,5 +23,14 @@ public class ReplaceMethod {
         System.out.println("c: " + c + " (all bc to yz)");
         System.out.println("d: " + d + " (all de to 12)");
         
+        //6/27/11 12:28 PM testing replace blanks
+        String a1 = "  a b cd ef g  ";
+        String b1 = a1.replace(" ", "");
+        System.out.println();
+        System.out.println("2. testing replace blanks");
+        System.out.println("sop a1: [" + a1 + "]");
+        System.out.println("sop b1: [" + b1 + "] -replaced");
+        
+        
     }
 }
