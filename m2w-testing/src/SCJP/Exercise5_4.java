@@ -38,7 +38,7 @@ class MyException{
             System.out.println("yay");
         }else{
             throw new BadFoodException();
-            
         }
+        System.out.println("changed on google code");
     }
 }
