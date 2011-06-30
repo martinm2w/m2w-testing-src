@@ -2,28 +2,23 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing.StringIOFormatingParsing;
-
-import java.lang.reflect.Array;
+package Testing.String;
 
 /**
  *
  * @author ruobo
- * @date Jun 27, 2011
+ * @date Jun 13, 2011
  */
-public class ToStringInString {
+public class TestingStringConcatenationOperator {
 //	====================================Attributes=============================================
 
 //      ===================================init & const============================================
 
 //	====================================main method============================================
     public static void main(String[] args){
-        String a = "big surprise";
-        String[] b = new String[3];
-        System.out.println("sop b: " + b);
-        System.out.println("sop a: " + a);
-        System.out.print("overrided toString() in String: ");
-        System.out.println(a.toString());
+        String a = "String"; int b = 3; int c = 7;
+        System.out.println("a + b + c: " + a + b + c); // either operand is a String ,the + operator becomes a String concatenation.
+        System.out.println("a + (b+c): " + a + (b+c)); // if both operands are numbers, the + operator is the addition operator.
     }
 //	===================================util methods============================================
 

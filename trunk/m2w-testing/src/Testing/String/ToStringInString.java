@@ -2,23 +2,28 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing.StringIOFormatingParsing;
+package Testing.String;
+
+import java.lang.reflect.Array;
 
 /**
  *
  * @author ruobo
  * @date Jun 27, 2011
  */
-public class Trim {
+public class ToStringInString {
 //	====================================Attributes=============================================
 
 //      ===================================init & const============================================
 
 //	====================================main method============================================
     public static void main(String[] args){
-        String a = "   a bc d ef       ";
+        String a = "big surprise";
+        String[] b = new String[3];
+        System.out.println("sop b: " + b);
         System.out.println("sop a: " + a);
-        System.out.println("sop a.trim: " + a.trim());
+        System.out.print("overrided toString() in String: ");
+        System.out.println(a.toString());
     }
 //	===================================util methods============================================
 
