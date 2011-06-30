@@ -1,4 +1,4 @@
-package Testing.StringIOFormatingParsing;
+package Testing.String;
 
 /*
  * To change this template, choose Tools | Templates

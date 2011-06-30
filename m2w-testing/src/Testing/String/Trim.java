@@ -2,23 +2,23 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing.StringIOFormatingParsing;
+package Testing.String;
 
 /**
  *
  * @author ruobo
- * @date Jun 13, 2011
+ * @date Jun 27, 2011
  */
-public class TestingStringConcatenationOperator {
+public class Trim {
 //	====================================Attributes=============================================
 
 //      ===================================init & const============================================
 
 //	====================================main method============================================
     public static void main(String[] args){
-        String a = "String"; int b = 3; int c = 7;
-        System.out.println("a + b + c: " + a + b + c); // either operand is a String ,the + operator becomes a String concatenation.
-        System.out.println("a + (b+c): " + a + (b+c)); // if both operands are numbers, the + operator is the addition operator.
+        String a = "   a bc d ef       ";
+        System.out.println("sop a: " + a);
+        System.out.println("sop a.trim: " + a.trim());
     }
 //	===================================util methods============================================
 
