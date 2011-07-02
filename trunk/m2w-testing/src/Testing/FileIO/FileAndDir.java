@@ -19,11 +19,15 @@ public class FileAndDir {
 
         try{
             boolean dir = newdir.mkdir();
+            System.out.println("dir exist?" + newdir.exists());
             System.out.println("dir created: " + dir);
-            if(newdir.isDirectory()){
+            if(newdir.isDirectory()){ // or newdir.exists();
                 boolean fileok = newfile.createNewFile();
                 System.out.println("file created: " + fileok);
             }
+//            newdir.renameTo("abc");// need to fill in File type.
+            File newDirName = new File("/home/ruobo/Desktop/nb2");
+            newdir.renameTo(newDirName);
         }catch(IOException e){
             e.printStackTrace();
         }
