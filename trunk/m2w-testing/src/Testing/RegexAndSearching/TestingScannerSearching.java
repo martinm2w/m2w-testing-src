@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author ruobo
  * @date Jul 3, 2011
  */
-public class TestingScanner {
+public class TestingScannerSearching {
     public static void main(String[] args){
         System.out.println("input: ");
         System.out.flush();//Flushes the stream. This is done by writing any buffered output bytes to the underlying output stream and then flushing that stream.
