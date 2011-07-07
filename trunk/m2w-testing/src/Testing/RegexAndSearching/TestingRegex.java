@@ -14,7 +14,8 @@ import java.util.regex.*;
 public class TestingRegex {
     public static void main(String[] args){
         TestingRegex tr = new TestingRegex();
-        tr.scjpChp6_exc1();
+//        tr.scjpChp6_exc1();
+        tr.testingParseSynsetInScil0200();
     }
 
     private void scjpChp6_text(){
@@ -55,5 +56,20 @@ public class TestingRegex {
         }
         
 
+    }
+    
+    private void testingParseSynsetInScil0200(){
+        Pattern p = Pattern.compile("n.[\\w+.]* [a-zA-Z]?[^a-zA-Z]+");
+        Matcher m = p.matcher("n.vi.vt. U出价,提议,意图,报价vt. 提供,出价,奉献,企图,使出现,演出vi. 出现,献祭n. 教皇,主教,高僧的地位vi. 装模作样的说话,执行教皇职务");
+//                    Scanner s = new Scanner(subSynset).useDelimiter("n. [^a-z]");
+        while(m.find()){
+            String temp = m.group();
+            System.out.println(temp);
+            String words = temp.split(" ")[1];
+            String[] senses = words.split(",", -1);
+                for(String a : senses){
+                    System.out.println("a" + a);
+                }
+        }
     }
 }
