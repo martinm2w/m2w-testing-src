@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing.Other;
+package Testing.CollectionsAndArrays;
 
 import java.util.ArrayList;
 
@@ -34,7 +34,8 @@ public class TestingArrayListProtectedRemoveRangeMethod extends ArrayList {
         t.add("5");//4
         t.add("6");//5
 
-        t.removeRange(2, 6);
+//        A.removeRange(2,6);//Compiler error: protected access in java.util.ArrayList
+        t.removeRange(2, 6);//fromIndex, inclusive, and toIndex, exclusive, : another way to explain the (a,b) kind of arguments, a is index, b is index+1
         System.out.println(t);
 
     }

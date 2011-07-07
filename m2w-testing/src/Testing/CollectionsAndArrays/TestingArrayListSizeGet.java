@@ -1,4 +1,4 @@
-package Testing.Other;
+package Testing.CollectionsAndArrays;
 
 
 import java.util.ArrayList;
