@@ -5,19 +5,27 @@
 
 package Testing.GenericsAndCollections.Collections;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  *
  * @Author ruobo
  * @Date Apr 16, 2011
  */
-public class TestingArrayListRemoving {
+public class TestingListAndSetRemoving {
 
 //	====================================Attributes=============================================
 
 //	====================================main method=============================================
     public static void main(String[] args){
+        TestingListAndSetRemoving lsr = new TestingListAndSetRemoving();
+//        lsr.oldTesting();
+//        lsr.removingObjectList();
+        lsr.removingObjectSet();
+        
+    }
+
+    private void oldTesting(){
         ArrayList<Integer> a = new ArrayList<Integer>();
         a.add(1);
         a.add(1);
@@ -64,9 +72,28 @@ public class TestingArrayListRemoving {
         System.out.println("B" + B);
 
     }
-//	===================================util methods============================================
 
-//      =================================setters & getters=========================================
-
-
+    private void removingObjectList(){
+        List<String> l1 = new ArrayList<String>();
+        String e = "e";
+        l1.add("a");l1.add("b");l1.add("c");l1.add("d");l1.add(e);
+        System.out.println("original: " + l1);
+        l1.remove(e);
+        System.out.println("e removed: " + l1);
+        l1.remove("b");
+        System.out.println("\"b\" removed: " + l1);
+        
+    }
+    
+    private void removingObjectSet(){
+        Set<String> s1 = new HashSet<String>();
+        String e = "e";
+        s1.add("a");s1.add("b");s1.add("c");s1.add("d");s1.add(e);
+        System.out.println("original: " + s1);
+        s1.remove(e);
+        System.out.println("e removed: " + s1);
+        s1.remove("b");
+        System.out.println("\"b\" removed: " + s1);
+        
+    }
 }
