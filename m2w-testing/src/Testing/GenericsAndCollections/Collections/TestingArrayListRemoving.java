@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing.GenericsAndCollections;
+package Testing.GenericsAndCollections.Collections;
 
 import java.util.ArrayList;
 
