@@ -19,6 +19,20 @@ public class LogicalOperators {
         System.out.println("xor " + ((2<3) ^ (4>3)));
         System.out.println("\"true\" xor \"false\": " + (true ^ false));
         System.out.println("\"true\" xor \"true\": "  + (true ^ true));
+        boolean x,y = false;
+        if(false & true){
+            System.out.println("&");
+        }
+        if(true && false){
+            System.out.println("&&");
+        }
+        
+        if(false | true){
+            System.out.println("|");
+        }
+        if(false || true){
+            System.out.println("||");
+        }
         //need to be exactly 1 true on both operands
     }
 //	===================================util methods============================================
