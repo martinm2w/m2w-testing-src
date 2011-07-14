@@ -4,6 +4,7 @@
  */
 package Testing.GenericsAndCollections.Generics;
 
+import java.util.*;
 /**
  *
  * @author ruobo
@@ -14,9 +15,30 @@ public class TestingGenericDeclaration {
 }
 
 class Rental{
-    
+    private List rentalPool;
+    private int maxNum;
+    public Rental(int maxNum, List rentalPool){
+        this.maxNum = maxNum;
+        this.rentalPool = rentalPool;
+    }
+
+    public Object getRental(){
+        return rentalPool.get(0);
+    }
+
+    public void returnRental(Object o){
+        rentalPool.add(o);
+    }
 }
 
 class CarRental extends Rental{
-    
+    CarRental(int maxNum, List<Car> rentalPool){
+        super(maxNum, rentalPool);
+    }
+    public Car getRental(){
+        return (Car) super.getRental();
+//        super.
+    }
 }
+
+class Car{}
