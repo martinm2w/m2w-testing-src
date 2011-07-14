@@ -55,7 +55,7 @@ public class TestingGenericAndMethodArguments {
 //        this.takesAGenericType_util1(c);
 //        this.takesAGenericType_util1(d);
         this.takesAGenericType_util1(new ArrayList<List>());//works too
-//        this.takesAGenericType_util1(new ArrayList<ArrayList>());// no polymophic here
+//        this.takesAGenericType_util1(new ArrayList<ArrayList>());// no polymophic here for generic type, only for base type
     }
 
     private void takesAGenericType_util1(ArrayList<List> list){
@@ -78,8 +78,73 @@ public class TestingGenericAndMethodArguments {
     private void addDogsToCats_util1(Animal[] animals){
         animals[0] = new Dog(); // put a dog into cat
     }
+    
+    //-----------------------------------
+    
+    
+    //----------------4------------------
+    /**
+     * m2w: base types polymophics are fine.
+     * @date 7/14/11 1:02 PM
+     */
+    private void addChildTypeIntoParentTypeGenericList(){
+        List<Animal> animals = new ArrayList<Animal>();
+        animals.add(new Dog());
+        animals.add(new Dog());
+        animals.add(new Cat());
+        Dog dog1 = new Dog();
+        animals.add(dog1);
+    }
+    
+    private void takesAnParentGenricType(){
+        Animal a1 = new Animal();
+        Dog d1 = new Dog();
+        Animal a2 = new Dog();
+        this.takesAnParentGenricType_util1(a1);
+        this.takesAnParentGenricType_util1(d1);
+        this.takesAnParentGenricType_util1(a2);
+    }
+    private void takesAnParentGenricType_util1(Animal animal){}
+    //-----------------------------------
+    
+    
+    
+    
+    //---------------5-------------------
+    private void addListOfChildIntoListOfParentAsParentListMain(){
+        List<Animal> animals = new ArrayList<Animal>();
+        animals.add(new Dog());
+        animals.add(new Dog());
+        this.addChildIntoListOfParent(animals);
+    }
+    private void addChildIntoListOfParent(List<Animal> animals){
+        animals.add(new Dog());
+    }
+    
+    /**
+     * m2w: important: this is said that: polymorphism can only apply to base types List & ArrayList, but not Generic types, <Animal> & <Dog>
+     * @date 7/14/11 1:15 PM
+     */
+    private void addListOfChildIntoListOfParentAsChildListMain(){
+        List<Dog> animals = new ArrayList<Dog>();
+        animals.add(new Dog());
+        animals.add(new Dog());
+//        this.addChildIntoListOfParent(animals);//compile failure                                    
+//      required: java.util.List<Testing.GenericsAndCollections.Generics.Animal>
+//      found: java.util.List<Testing.GenericsAndCollections.Generics.Dog>
+    }
+        
+    //-----------------------------------
+    
+    
+    
+    
+    
+    
 }
-
+    //---------------34------------------
     class Animal{}
     class Dog extends Animal{}
     class Cat extends Animal{}
+    //-----------------------------------
+
