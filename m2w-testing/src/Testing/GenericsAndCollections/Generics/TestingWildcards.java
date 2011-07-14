@@ -62,6 +62,8 @@ public class TestingWildcards {
         System.out.println("cannot add using wildcard");
     }
     
+//    private void addGChildIntoListGParent_type(List<T extends Animal> animals){} // can't do it like this.
+    
     private void takesGChild_WildCard(List<? extends Animal> animals){}
     private void takesGParent_WildCard(List<? super ArrayList<String>> list){}
     
@@ -72,13 +74,51 @@ public class TestingWildcards {
     private boolean testingWildCards(){
         this.takesGChild_WildCard(new ArrayList<Dog>());
         this.takesGParent_WildCard(new ArrayList<List<String>>());// yes
+        
+        this.addGTypeIntoListGType_Wildcard(new ArrayList<Dog>());
+        this.addGTypeIntoListGType_Wildcard(new ArrayList<Animal>());
+                
+        
         return true;
+    }
+    
+    /**
+     * m2w: works because collection of supertype of Dog can accept Dog Type objects as elements.
+     * @param animals 
+     * @date 7/14/11 3:28 PM
+     */
+    private void addGTypeIntoListGType_Wildcard(List<? super Dog> animals){
+        animals.add(new Dog());
+//        animals.add(new Animal()); // no can't add Parent
     }
     //---------------------------------------------------------------    
 
     
+    //---------------------------2-----------------------------------    
     
+    private void a_testingWildCardsWithNoTypeOrGObject(){
+        List<Integer> myList = new ArrayList<Integer>();
+        this.testingWildCardsWithNoType(myList);
+//        this.testingWildCardsWithGObject(myList);// fail because Gtype pass-in Arg check
+    }
     
+    private void testingWildCardsWithNoType(List<?> list){
+//        list.add(new Dog());// only ? with super can use adding
+//        list.add(1);
+    }
+    private void testingWildCardsWithGObject(List<Object> list){
+        list.add(new Dog());// 
+    }
+    //---------------------------------------------------------------    
+
+    private void a_testingWildcardObjectInstansitation(){
+        List<?> list = new ArrayList<Dog>();
+        List<? extends Animal> aList = new ArrayList<Dog>();
+//        List<?> foo = new ArrayList<? extends Animal>();      //can't use wildcard in object creation. //required: class or interface without bounds
+//        List<? extends Dog> cList = new ArrayList<Integer>(); //integer does not extend dog
+        List<? super Dog> bList = new ArrayList<Animal>();
+//        List<? super Animal>  dList = new ArrayList<Dog>();   //has to be super of animal, like object or animal
+    }
     
 }
 
