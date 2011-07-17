@@ -145,6 +145,6 @@ public class TestingGenericAndMethodArguments {
     //---------------34------------------
     class Animal{}
     class Dog extends Animal{}
-    class Cat extends Animal{}
+    class Cat extends Animal{ public Cat(){}}
     //-----------------------------------
 
