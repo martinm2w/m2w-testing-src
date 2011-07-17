@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing.StringIOFormatingParsing.FileANdIO;
+package Testing.StringIOFormatingParsing.Serialization;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -16,7 +16,14 @@ import java.io.Serializable;
  * @author ruobo
  * @date Jul 2, 2011
  */
-public class Serializing {
+public class TestingSerializing {
+}
+
+/**
+ * m2w: serialization example from SCJP page 463
+ * @author ruobo
+ */
+class SerializeDog{
     public static void main(String[] args){
         Collar c = new Collar(3);
         Collar c1 = new Collar(4);

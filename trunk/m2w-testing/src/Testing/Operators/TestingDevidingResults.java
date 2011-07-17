@@ -3,31 +3,23 @@
  * and open the template in the editor.
  */
 
-package Testing.Other;
+package Testing.Operators;
 
 /**
  *
  * @Author ruobo
- * @Date Mar 8, 2011
+ * @Date Apr 27, 2011
  */
-public class TestingWappers {
+public class TestingDevidingResults {
 
 //	====================================Attributes=============================================
-    Integer i = 3;
-    int j;
+    
 //	====================================main method=============================================
-    public static void main (String[] args){
-        TestingWappers t = new TestingWappers();
-        t.go();
+    public static void main(String [] args){
+        System.out.println(3.0 / 0.0);
     }
-
-        
 //	===================================util methods============================================
-    public void go(){
-        j=i;
-        System.out.println(j);
-        System.out.println(i);
-    }
+
 //      =================================setters & getters=========================================
 
 
