@@ -6,7 +6,7 @@ package Testing.GenericsAndCollections.Generics;
 
 import java.util.*;
 /**
- *
+ *  m2w : ? wildcard works when declaring a reference for a variable.
  * @author ruobo
  * @date Jul 14, 2011
  */
