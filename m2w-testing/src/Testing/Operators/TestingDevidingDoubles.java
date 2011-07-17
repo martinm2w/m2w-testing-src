@@ -3,21 +3,26 @@
  * and open the template in the editor.
  */
 
-package Testing.Other;
+package Testing.Operators;
 
 /**
  *
  * @Author ruobo
- * @Date Apr 27, 2011
+ * @Date Apr 13, 2011
  */
-public class TestingDevidingResults {
+public class TestingDevidingDoubles {
 
 //	====================================Attributes=============================================
-    
+
 //	====================================main method=============================================
-    public static void main(String [] args){
-        System.out.println(3.0 / 0.0);
-    }
+public static void main(String[] args){
+    double a = 0.03;
+    double b = 0.0 / a;
+    double c = a / 0.0;
+    System.out.println(b);
+    System.out.println(c);
+    
+}
 //	===================================util methods============================================
 
 //      =================================setters & getters=========================================

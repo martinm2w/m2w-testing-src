@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing.GenericsAndCollections.Collections;
+package Testing.GenericsAndCollections.CompareAndSearch;
 
 import java.util.*;
 

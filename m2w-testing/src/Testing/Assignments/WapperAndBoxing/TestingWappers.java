@@ -3,28 +3,31 @@
  * and open the template in the editor.
  */
 
-package Testing.Other;
+package Testing.Assignments.WapperAndBoxing;
 
 /**
  *
  * @Author ruobo
- * @Date Apr 13, 2011
+ * @Date Mar 8, 2011
  */
-public class TestingDevidingDoubles {
+public class TestingWappers {
 
 //	====================================Attributes=============================================
-
+    Integer i = 3;
+    int j;
 //	====================================main method=============================================
-public static void main(String[] args){
-    double a = 0.03;
-    double b = 0.0 / a;
-    double c = a / 0.0;
-    System.out.println(b);
-    System.out.println(c);
-    
-}
-//	===================================util methods============================================
+    public static void main (String[] args){
+        TestingWappers t = new TestingWappers();
+        t.go();
+    }
 
+        
+//	===================================util methods============================================
+    public void go(){
+        j=i;
+        System.out.println(j);
+        System.out.println(i);
+    }
 //      =================================setters & getters=========================================
 
 
