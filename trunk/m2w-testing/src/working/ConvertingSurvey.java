@@ -41,8 +41,8 @@ public class ConvertingSurvey {
     public static void main(String[] args){
         
 
-        String input_dir = "/home/ruobo/develop/surveys/chinese_surveys/Nov_06_10/b";
-        String output_file_path = "/home/ruobo/NetBeansProjects/testing-m2w/src/working/output/nov_06_B";
+        String input_dir = "/home/ruobo/develop/surveys/chinese_surveys/face_to_face";
+        String output_file_path = "/home/ruobo/NetBeansProjects/m2w-testing/src/working/output/face_to_face_2011_07_18";
 
         ConvertingSurvey cs = new ConvertingSurvey(input_dir);
 //        String[] names = {"Hoisha","Chu","C","Jia","peng","Sining","Jiaqian","Xinyuan","Yehui","Yunfan","Sheng","Hong"}; // nov 20 a
@@ -60,7 +60,7 @@ public class ConvertingSurvey {
 //        cs.htmlNames = new String[] {"Aixun","Jia","Mingxuan","Hong","Peng","Shingsun","Sining","Zhuocao","i","Yehui","Yunfan","Zhiming","M","N","O"}; // nov 09a 11
 //        cs.htmlNames = new String[] {"Haoshi","b","Jiahang","Jun","Mingxi","Mingzi","Ruizhi","Hoisha","Shiwen","Ximeng","k","Yuheng","M","N","O"}; // nov 09b 10
 //        cs.htmlNames = new String[] {"Aixun","Chu","Haoli","Hong","Peng","f","Sining","Xiaojuan","Xinyuan","Yehui","Yunfan","Zhiming","M","N","O"}; // nov 06a 11
-        cs.htmlNames = new String[] {"Chak","b","Jiahang","Jun","Mingxi","Mingzi","Ruizhi","Shan","Wan","Xiao","Yueming","Yuheng","M","N","O"}; // nov 06b 11
+        cs.htmlNames = new String[] {"Aixun","Jinzi","Jun","Mingzi","Ruizhi","f","Sining","Yunfan","Zhiming","j","k","l","M","N","O"}; // nov 06b 11
         
 
         int filesize = cs.files.size();
