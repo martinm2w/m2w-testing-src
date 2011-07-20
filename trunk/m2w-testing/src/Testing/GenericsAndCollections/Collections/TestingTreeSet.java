@@ -5,17 +5,22 @@
 package Testing.GenericsAndCollections.Collections;
 
 import java.util.*;
+import Testing.util.SOP.*;
 /**
  * m2w: 1. wild card is used when declaring a Generic Type not a Base type of an Variable.
  *      2. headset is < because the default order of values is from smallest to biggest.
  *      3. a common behavior in 2 args method is that args[0] is included and args[1] is excluded.
+ *      ------ 7/20/11 12:57 PM
+ *      1. adding objs which didn't implement Comparable into TreeSet will compile but will throw exception at runtime.
  * @author ruobo
  * @date Jul 17, 2011
  */
 public class TestingTreeSet {
     public static void main(String[] args){
         TestingTreeSet ts = new TestingTreeSet();
-        ts.test1();
+//        ts.test1();
+        ts.test2();
+        
     }
     
     private void test1(){
@@ -41,6 +46,14 @@ public class TestingTreeSet {
         System.out.println(t);
     }
     
+    private void test2(){
+        TreeSet A = new TreeSet();
+        A.add("A");
+        
+        sop(A);
+        A.add(new Object());
+//        sop("");
+    }
 //    private void sop1(<? extends Object> t){// is not used like this.
 //        System.out.println(t);
 //    }

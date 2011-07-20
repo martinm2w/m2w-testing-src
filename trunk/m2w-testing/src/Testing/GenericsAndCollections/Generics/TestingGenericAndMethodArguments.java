@@ -5,6 +5,7 @@
 
 package Testing.GenericsAndCollections.Generics;
 
+import java.lang.Number;
 import java.util.*;
 /**
  *
@@ -15,6 +16,8 @@ public class TestingGenericAndMethodArguments {
     public static void main(String[] args){
         TestingGenericAndMethodArguments m2w = new TestingGenericAndMethodArguments();
 //        m2w.takesAnRawType();
+        
+        
     }
 
     //-----------------1-----------------
@@ -135,9 +138,18 @@ public class TestingGenericAndMethodArguments {
     }
         
     //-----------------------------------
-    
-    
-    
+//    /**
+//     * m2w: work note 2011-07-12. scjp- 2 test case: return type is List<E extends Number>, catching var is ArrayList<Integer>,
+//    arg type is List<E> nums, in var is ArrayList<Integer>
+//     * @date 7/20/11 11:32 AM
+//     */
+//    private void $test1(){
+//        
+//    }
+//    private <E> List<? extends Number> test1_util(List<E> nums){
+//        List<? extends Number> l = nums;
+//        return l;
+//    }
     
     
     
@@ -147,4 +159,3 @@ public class TestingGenericAndMethodArguments {
     class Dog extends Animal{}
     class Cat extends Animal{ public Cat(){}}
     //-----------------------------------
-
