@@ -64,3 +64,20 @@ public class ForLoop {
 
 //      =================================setters & getters=========================================
  }
+
+class For1{
+    public static void main(String[] args){
+        For1 m2w = new For1();
+        m2w.ppi();
+        m2w.ppi1();
+    }
+
+    private void ppi(){
+        for(int i = 0; ++i<4;)
+            System.out.println(i);
+    }
+    private void ppi1(){
+        for(int i = 0; i < 4; ++i)
+            System.out.println(i);
+    }
+}
