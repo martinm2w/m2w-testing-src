@@ -9,6 +9,7 @@ import static Testing.util.SOP.*;
  * m2w: 
  * 1. inner class can be declared with all access modifiers.
  * 2. instantiation in static methods notice: cannot use "this", cuz "this" can only be used in instance methods.
+ * 3. "this" can be used in creation only if it's in the instance method of the Outter class.
  * @author ruobo
  */
 public class TestingInnerClassCreation {
