@@ -17,8 +17,8 @@ import java.util.Date;
 public class TestingDateFormat {
     public static void main(String[] args){
         TestingDateFormat tdf = new TestingDateFormat();
-//        tdf.testingDateFormaConstr();
-        tdf.parsingInputIntoDate();
+        tdf.testingDateFormaConstr();
+//        tdf.parsingInputIntoDate();
     }
 
     /**
