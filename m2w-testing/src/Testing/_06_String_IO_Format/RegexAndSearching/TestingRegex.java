@@ -7,7 +7,7 @@ package Testing._06_String_IO_Format.RegexAndSearching;
 
 import java.util.regex.*;
 /**
- *
+ * 1. so regex "." stands for everything.
  * @author ruobo
  * @date Jul 2, 2011
  */
@@ -15,7 +15,8 @@ public class TestingRegex {
     public static void main(String[] args){
         TestingRegex tr = new TestingRegex();
 //        tr.scjpChp6_exc1();
-        tr.testingParseSynsetInScil0200();
+//        tr.testingParseSynsetInScil0200();
+        tr.$test1_dot();
     }
 
     private void scjpChp6_text(){
@@ -71,5 +72,14 @@ public class TestingRegex {
                     System.out.println("a" + a);
                 }
         }
+    }
+    
+    //7/22/11 1:18 PM
+    private void $test1_dot(){
+        Pattern p = Pattern.compile(".");
+        Matcher m = p.matcher("Csdlf ja1 2312@#$ @#$@%@#!&*() ");
+                
+        while(m.find())
+            System.out.print(m.group() + " ");
     }
 }
