@@ -18,8 +18,8 @@ import Testing.util.SOP.*;
 public class TestingTreeSet {
     public static void main(String[] args){
         TestingTreeSet ts = new TestingTreeSet();
-//        ts.test1();
-        ts.test2();
+        ts.test1();
+//        ts.test2();
         
     }
     
@@ -35,6 +35,8 @@ public class TestingTreeSet {
         this.sop("higher4 >: " + t.higher("4"));
         this.sop("lower4 <: " + t.lower("4"));
         this.sop("first & last: " + t.first() + t.last());
+        this.sop("headset4_ < :" + t.headSet("4"));
+        this.sop("tailset4_ > : " + t.tailSet("4"));
         this.sop("headset4true <= :" + t.headSet("4" , true));
         this.sop("tailset4false > : " + t.tailSet("4", false));
         this.sop("subset 46: " + t.subSet("4", "6"));
