@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing._02_OO_Inher_Poly;
+package Testing._02_OO_Inher_Poly.Polymorphism;
 
 import java.util.*;
 import static Testing.util.SOP.*;

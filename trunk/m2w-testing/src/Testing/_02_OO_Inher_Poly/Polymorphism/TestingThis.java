@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing._02_OO_Inher_Poly;
+package Testing._02_OO_Inher_Poly.Polymorphism;
 
 /**
  * m2w: 1. non-static variable this cannot be referenced from a static context
