@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 /**
- *
+ * 1. need to implement compare(), takes 2 args. and return int.
  * @Author ruobo
  * @Date Mar 14, 2011
  */
