@@ -10,7 +10,9 @@ package Testing._08_Struct_InnerClass.InnerClass;
  */
 public class TestingStaticInnerClass {
     public static void main(String[] args){
-        
+        TestingStaticInnerClass.inner_static m2w = new TestingStaticInnerClass.inner_static();
+        m2w.go();
+        TestingStaticInnerClass.inner_static.go();
     }
     
     private void test1(){
@@ -23,5 +25,7 @@ public class TestingStaticInnerClass {
     }
     
     class inner_reg{}
-    static class inner_static{}
+    static class inner_static{
+        static void go(){}
+    }
 }

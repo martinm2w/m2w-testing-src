@@ -8,6 +8,7 @@ package Testing._06_String_IO_Format.RegexAndSearching;
 import java.util.regex.*;
 /**
  * 1. so regex "." stands for everything.
+ * 2. regex "\w" look for words. not tested chinese.
  * @author ruobo
  * @date Jul 2, 2011
  */
@@ -16,7 +17,8 @@ public class TestingRegex {
         TestingRegex tr = new TestingRegex();
 //        tr.scjpChp6_exc1();
 //        tr.testingParseSynsetInScil0200();
-        tr.$test1_dot();
+//        tr.$test1_dot();
+        tr.$test2_w();
     }
 
     private void scjpChp6_text(){
@@ -81,5 +83,16 @@ public class TestingRegex {
                 
         while(m.find())
             System.out.print(m.group() + " ");
+    }
+
+    private void $test2_w(){
+        String s = "adsfk jash dflkjhalk fj*&(^&*% ^&^$ %&^%&*6  ";
+        Pattern p = Pattern.compile("\\w");
+        Matcher m = p.matcher(s);
+
+        while(m.find())
+            System.out.print(m.end() + " " + m.group() + " | ");
+        System.out.println();
+        System.out.println(s.length());
     }
 }
