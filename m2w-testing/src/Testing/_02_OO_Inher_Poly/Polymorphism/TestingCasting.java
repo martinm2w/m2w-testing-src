@@ -21,6 +21,8 @@ public class TestingCasting {
 
     private void $test1(){
         List a = new ArrayList();
-        RoleList b = (RoleList)a;
+        List c = new RoleList();
+//        RoleList b = (RoleList)a;
+        List d = (RoleList)c;
     }
 }
