@@ -17,7 +17,7 @@ import java.util.Locale;
 public class TestingNumberFormat {
     public static void main(String[] args){
         TestingNumberFormat tnf = new TestingNumberFormat();
-//        tnf.scjpChp6_485();
+        tnf.scjpChp6_485();
         tnf.scjpChp6_486();
     }
 
@@ -42,7 +42,12 @@ public class TestingNumberFormat {
         System.out.print(nf.format(f1) + " ");
 
         nf.setMaximumFractionDigits(5);
+
         System.out.println(nf.format(f1) + " ");
+                nf.setMaximumIntegerDigits(1); // cut of the front.
+        System.out.println(nf.format(f1) + "max int digit 1");
+        nf.setMaximumIntegerDigits(4); // cut of the front.
+        System.out.println(nf.format(123));
 
         try{
             System.out.println("parsing: " + nf.parse("1234.567"));
