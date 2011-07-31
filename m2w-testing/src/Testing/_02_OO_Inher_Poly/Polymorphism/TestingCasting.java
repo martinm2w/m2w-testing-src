@@ -24,5 +24,11 @@ public class TestingCasting {
         List c = new RoleList();
 //        RoleList b = (RoleList)a;
         List d = (RoleList)c;
+//        Integer i = (Integer)c;
+        int i = 0;
+        Integer I = (Integer)i;
+//        Double b = (Double)I;
+        Number n = new Double(3.3);
+        Integer J = (Integer)n;
     }
 }
