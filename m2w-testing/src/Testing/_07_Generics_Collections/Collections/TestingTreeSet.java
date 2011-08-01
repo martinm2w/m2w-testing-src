@@ -18,8 +18,9 @@ import Testing.util.SOP.*;
 public class TestingTreeSet {
     public static void main(String[] args){
         TestingTreeSet ts = new TestingTreeSet();
-        ts.test1();
-//        ts.test2();
+//        ts.test1();
+        ts.test2();
+//        ts.$test3();
         
     }
     
@@ -50,13 +51,32 @@ public class TestingTreeSet {
     
     private void test2(){
         TreeSet A = new TreeSet();
-        A.add("A");
-        
+        $_test_tree_set_A a = new $_test_tree_set_A();
+        $_test_tree_set_A b = new $_test_tree_set_A();
+        A.add(a);
+        A.add(b);
         sop(A);
-        A.add(new Object());
+//        A.add("A");
+        
+//        sop(A);
+//        A.add(new Object());
 //        sop("");
     }
 //    private void sop1(<? extends Object> t){// is not used like this.
 //        System.out.println(t);
 //    }
+    private void $test3(){
+//        TreeSet<Integer> A = {new Integer(1),new Integer(2),new Integer(3),new Integer(4),new Integer(5)};
+        TreeSet A = new TreeSet();
+        for(int i = 0; i++ < 10;)
+            A.add(i);
+        System.out.println(A);
+    }
+}
+
+class $_test_tree_set_A implements Comparable{
+    @Override
+    public int compareTo(Object Obj){
+        return 1;
+    }
 }
