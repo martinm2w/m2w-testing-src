@@ -18,7 +18,8 @@ public class TestingWappers {
 //	====================================main method=============================================
     public static void main (String[] args){
         TestingWappers t = new TestingWappers();
-        t.go();
+//        t.go();
+        t.$test1();
     }
 
         
@@ -27,6 +28,18 @@ public class TestingWappers {
         j=i;
         System.out.println(j);
         System.out.println(i);
+    }
+
+    //7/31/11 7:06 PM
+    private void $test1(){
+        System.out.println(Integer.valueOf("4",5));
+        System.out.println(Character.MIN_RADIX);
+        System.out.println(Character.MAX_RADIX);
+        System.out.println(Integer.parseInt("11612312",16));
+        Integer a = 4;
+//        a.to
+        Integer.toBinaryString(a);
+//        
     }
 //      =================================setters & getters=========================================
 
