@@ -10,7 +10,7 @@ package Testing._06_String_IO_Format.String;
  * @author ruobo
  * @date Aug 1, 2011
  */
-public class TestingToLowerCaseCreatNewObj {
+ class TestingToLowerCaseCreatNewObj {
     public static void main(String[] args){
         $test1();
     }
@@ -23,3 +23,5 @@ public class TestingToLowerCaseCreatNewObj {
         System.out.println(a == d);
     }
 }
+
+//default interface a{}
