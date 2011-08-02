@@ -31,10 +31,11 @@ public class TestingComparator {
         Collections.sort( a, new Comparator() {
 
             public int compare(Object o1, Object o2) {
-                Integer no1 = Integer.parseInt((String)o1);
-                Integer no2 = Integer.parseInt((String)o2);
-                return no1.compareTo(no2);// put smaller ones in front , output small to big list
+//                Integer no1 = Integer.parseInt((String)o1);
+//                Integer no2 = Integer.parseInt((String)o2);
+//                return no1.compareTo(no2);// put smaller ones in front , output small to big list
 //                throw new UnsupportedOperationException("Not supported yet.");
+                return ((String)o1).compareTo((String)o2);
             }
         });
         System.out.println(a);
