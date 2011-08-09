@@ -5,7 +5,7 @@ package working;
  * @author [Ruobo + m2w]
  * @date [Aug 3, 2011 - 1:33:11 PM]
  */
-public class TestingFindingChineseChar {
+public class TestingChineseChars {
     public static void main(String[] args){
         String s = "个人觉得其实最重要的是要乐观";
 //        boolean b = s.matches("[\\u4E00-\\u9FA5]");
