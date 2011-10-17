@@ -8,7 +8,8 @@ package working;
 public class TestingChineseRegex {
     public static void main(String[] args){
 //        $test1();
-        $test2();
+//        $test2();
+        $test3();
     }
     
     private static void $test1 (){
@@ -21,6 +22,11 @@ public class TestingChineseRegex {
     private static void $test2(){
         String a = "阿德里封口机 不是 我 就是 他阿斯顿离开房间 ";
         boolean b = a.matches(".*不是.*就是.*");
+        System.out.println(b);
+    }
+    private static void $test3(){
+        String a = "阿里";
+        boolean b = a.matches("阿[德]?里");
         System.out.println(b);
     }
 }
