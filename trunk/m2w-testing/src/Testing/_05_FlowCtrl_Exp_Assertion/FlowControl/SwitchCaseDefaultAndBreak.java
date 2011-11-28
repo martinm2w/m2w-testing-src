@@ -34,6 +34,10 @@ public class SwitchCaseDefaultAndBreak {
                 default: System.out.println("default, if no break will continue");
                 case 4:{System.out.println("case 4");};//can omit {} and ;
             }
+//            String derp = "s";
+//            switch(derp){
+//                
+//            }
     }
 //	===================================util methods============================================
 
