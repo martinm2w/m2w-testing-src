@@ -10,8 +10,9 @@ package Testing._06_String_IO_Format.String;
  */
 public class TestingHalfAndFullWidth {
     public static void main(String[] args){
-        String full = "";
-        String half = "?";
-        
+        char full = '？';
+        char half = '?';
+        System.out.println(Integer.toHexString(full));
+        System.out.println(Integer.toHexString(half));
     }
 }
