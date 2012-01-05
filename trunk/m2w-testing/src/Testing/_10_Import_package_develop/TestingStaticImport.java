@@ -4,7 +4,8 @@
  */
 package Testing._10_Import_package_develop;
 
-import static java.lang.System.out;
+import static java.lang.System.*;
+import Testing.util.SOP;
 /**
  *
  * @author ruobo
@@ -14,5 +15,6 @@ public class TestingStaticImport {
     public static void main(String[] args){
 //        println(); // won't compile 
         out.println();
+//        sop();
     }
 }
