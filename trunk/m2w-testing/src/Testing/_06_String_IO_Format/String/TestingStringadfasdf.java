@@ -27,6 +27,8 @@ public class TestingStringadfasdf {
 //            m.group();
         }
         System.out.println(A);
+        String a = "asdlfkjalfj";
+        int b = a.length();
     }
     
 //    private void $test1(){
