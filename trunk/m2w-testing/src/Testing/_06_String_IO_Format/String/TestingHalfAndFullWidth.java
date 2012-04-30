@@ -14,5 +14,6 @@ public class TestingHalfAndFullWidth {
         char half = '?';
         System.out.println(Integer.toHexString(full));
         System.out.println(Integer.toHexString(half));
+        System.out.println("\u003f");
     }
 }
