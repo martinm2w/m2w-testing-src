@@ -15,5 +15,8 @@ public class TestingCharToInt {
         System.out.println(a);
         System.out.println(A);
 //        0 |= (1 << 3);
+        char[] fff = new char[3-2];
+        int i = 5/2;
+        System.out.println();
     }
 }
