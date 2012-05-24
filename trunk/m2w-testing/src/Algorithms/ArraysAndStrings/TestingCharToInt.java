@@ -17,5 +17,12 @@ public class TestingCharToInt {
             System.out.println();
         }
         i = i / 10;
+        Character a = new Character('a');
+        System.out.println(Character.valueOf('a'));
+        char b = 'a';
+        int c = b;
+        System.out.println(c);
+        System.out.println(a.hashCode());
+        
     }
 }
