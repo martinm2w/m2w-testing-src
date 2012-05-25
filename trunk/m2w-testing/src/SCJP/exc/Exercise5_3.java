@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package SCJP;
+package SCJP.exc;
 //import java.lang.*;
 
 import java.lang.Exception;
