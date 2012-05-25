@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package SCJP;
+package SCJP.exc;
 
 /**
  * m2w: TestingSynchronizing.$test1(), at Testing.Thread_Stack.Synchronizing;
