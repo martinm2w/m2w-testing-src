@@ -20,6 +20,7 @@ public class Rotate90 {
         } 
         Rotate90 r9 = new Rotate90();
         r9.rotate90(pic);
+//        Rotate90.rotate(pic, 4);
         System.out.println("out");
         
         for(int[] a : pic){
