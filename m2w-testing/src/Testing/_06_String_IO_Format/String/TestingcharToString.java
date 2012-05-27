@@ -13,5 +13,7 @@ public class TestingcharToString {
         char[] aaa = {'a'};
         String b = new String();
         System.out.println(b);
+        int i = 'a';
+        System.out.println(i);
     }
 }

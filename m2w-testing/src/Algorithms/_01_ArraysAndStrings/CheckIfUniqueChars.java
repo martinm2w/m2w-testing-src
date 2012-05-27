@@ -44,7 +44,20 @@ public class CheckIfUniqueChars {
         return true;
     }
 
-    
+    /**
+    * m2w: 3. uses a int local variable. using bit manipulation, pushing bits to the left. assuming there are only a-Z chars
+    * @param str
+    * @return
+    */
+    public boolean isUniqueChars3(String str){
+        int check = 0;
+        for(int i = 0; i < str.length(); i++){
+            int c = str.charAt(i) - 'a';
+            if((check & (1 << c)) > 0) return false;
+            check |= 1 << c;
+        }
+        return true;
+    }
     
     
     
