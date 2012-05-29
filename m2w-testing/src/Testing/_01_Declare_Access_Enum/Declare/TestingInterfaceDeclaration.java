@@ -26,6 +26,7 @@ public interface TestingInterfaceDeclaration {
 //    static void go();
 }
 
+
     interface $m2w_TestingInterfaceDeclaration_NoAccess{}
 //    static interface $m2w_TestingInterfaceDeclaration_NoAccess_static{}
 //    protected static interface $m2w_TestingInterfaceDeclaration_protected_static{}
