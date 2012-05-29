@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing._01_Declare_Access.Declare;
+package Testing._01_Declare_Access_Enum.Declare;
 
 /**
  * 1. inner interface can be protected, public, and static.

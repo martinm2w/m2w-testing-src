@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing._01_Declare_Access.Declare;
+package Testing._01_Declare_Access_Enum.Declare;
 
 /**
  * 1. no public class, file name can be what ever.

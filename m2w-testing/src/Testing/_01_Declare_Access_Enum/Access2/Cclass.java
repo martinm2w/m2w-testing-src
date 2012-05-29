@@ -4,10 +4,10 @@
  */
 
 
-package Testing._01_Declare_Access.Access2;
+package Testing._01_Declare_Access_Enum.Access2;
 
 
-import Testing._01_Declare_Access.Access.*;
+import Testing._01_Declare_Access_Enum.Access.*;
 /**
  *
  * @author ruobo

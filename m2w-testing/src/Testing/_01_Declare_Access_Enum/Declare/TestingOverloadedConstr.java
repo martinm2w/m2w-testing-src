@@ -1,4 +1,4 @@
-package Testing._01_Declare_Access.Declare;
+package Testing._01_Declare_Access_Enum.Declare;
 
 /**
  * 1. call to this() must be first statement of overloaded constr
