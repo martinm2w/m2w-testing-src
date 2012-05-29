@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Testing._01_Declare_Access.Access;
+package Testing._01_Declare_Access_Enum.Access;
 
 /**
  *

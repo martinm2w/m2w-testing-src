@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Testing._01_Declare_Access.Declare;
+package Testing._01_Declare_Access_Enum.Declare;
 
 /**
  * 1. abs method must be declared as so. interface method don't have to.
